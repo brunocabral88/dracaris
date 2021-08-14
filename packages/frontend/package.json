@@ -54,14 +54,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.15.0",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/node-logger": "^6.3.7",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.7",
+    "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "ts-jest": "^27.0.4"
   }
 }

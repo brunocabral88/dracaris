@@ -1,11 +1,8 @@
-import * as dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 
 import GraphQLServer from './GraphQLServer';
-
-dotenv.config();
 
 export default class CatalogsServer {
 

@@ -1,19 +1,22 @@
 import { ApolloServer, gql } from 'apollo-server-express';
+import GetAllProducts from '../../useCases/products/GetAll';
 
 const typeDefs = gql`
-    type Book {
+    type Product {
         title: String
-        author: String
+        price: Float
     }
 
     type Query {
-        books: [Book]
+        products: [Product]
     }
 `;
 
+const getAllProductsUseCase = GetAllProducts;
+
 const resolvers = {
     Query: {
-        books: () => [{ title: 'Domain Driven Design', author: 'Foo Bar' }]
+        products: () => getAllProductsUseCase(),
     }
 };
 

@@ -52,4 +52,6 @@ typings/
 .env
 .env.test
 
+# Build folders
 dist
+out
